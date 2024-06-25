@@ -8,16 +8,17 @@ module.exports = {
         filename: 'bundle.js'
     },
     performance: {
-        maxAssetSize: 1000000,
+        maxAssetSize: 2000000,
+        maxEntrypointSize: 2000000
     },
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
                 use: [
                     'file-loader',
