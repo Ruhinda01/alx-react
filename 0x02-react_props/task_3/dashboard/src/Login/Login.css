@@ -1,0 +1,12 @@
+.App-body {
+    /* background-color: white; */
+    border-bottom: 3px solid red;
+    font-size: 1rem;
+    text-align: left;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.App-body input {
+  margin: 10px;
+}

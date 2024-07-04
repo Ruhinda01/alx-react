@@ -1,0 +1,19 @@
+.App-header {
+    background-color: white;
+    border-bottom: 3px solid red;
+    display: flex;
+    align-items: center;
+}
+  
+.App-header img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.App-header h1 {
+    color: red;
+    font-size: 1.4rem;
+    display: inline;
+}
