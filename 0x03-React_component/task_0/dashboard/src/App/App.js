@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 import Header from '../Header/Header';
@@ -22,16 +22,20 @@ const listNotifications = [
 ];
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+    const { isLoggedIn } = this.props;
     return (
-      <>
+      <Fragment>
         <Notifications listNotifications={listNotifications} />
         <div className="App">
           <Header />
-          { this.props.isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+          { isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
           <Footer />
       </div>
-      </>
+      </Fragment>
     );
   }
 }
